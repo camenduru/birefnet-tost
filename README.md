@@ -15,7 +15,7 @@ https://arxiv.org/abs/2401.03407
 https://www.birefnet.top/
 
 ### 🖼 Output
-
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/3f3d01df-4a9b-4b39-8ca3-e8de86f5a97b">
 
 ### 🏢 Sponsor
 https://runpod.io

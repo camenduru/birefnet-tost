@@ -16,7 +16,7 @@
         ],
         "widget": "readme"
       },
-      "input_image_url": {
+      "input_image_check": {
         "type": "string",
         "description": "Input Image URL",
         "widget": "textarea"

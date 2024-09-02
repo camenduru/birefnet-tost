@@ -30,7 +30,7 @@ with torch.inference_mode():
 def generate(input):
     values = input["input"]
 
-    input_image_url = values['input_image_url']
+    input_image_url = values['input_image_check']
     input_image = download_file(input_image_url)
     
     input_image = Image.open(input_image)

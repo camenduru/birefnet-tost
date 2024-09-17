@@ -33,7 +33,7 @@ def generate(input):
     input_image_url = values['input_image_check']
     input_image = download_file(input_image_url)
     
-    input_image = Image.open(input_image)
+    input_image = Image.open(input_image).convert("RGB")
     image_size = input_image.size
     input_images = transform_image(input_image).unsqueeze(0).to("cuda")
     preds = birefnet(input_images)[-1].sigmoid().cpu()

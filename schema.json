@@ -1,39 +1,45 @@
 {
-    "$schema": "http://json-schema.org/draft-04/hyper-schema#",
-    "type": "object",
-    "properties": {
-      "readme": {
-        "type": "string",
-        "title": "Bilateral Reference for High-Resolution Dichotomous Image Segmentation",
-        "author": "Peng Zheng, Dehong Gao, Deng-Ping Fan, Li Liu, Jorma Laaksonen, Wanli Ouyang, Nicu Sebe",
-        "page": "https://www.birefnet.top/",
-        "paper": "https://arxiv.org/abs/2401.03407",
-        "code": "https://github.com/ZhengPeng7/BiRefNet",
-        "jupyter": "https://github.com/camenduru/BiRefNet-jupyter",
-        "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/birefnet.ipynb",
-        "tags": [
-          "Vision to Image"
-        ],
-        "widget": "readme"
-      },
-      "input_image_check": {
-        "type": "string",
-        "description": "Input Image URL",
-        "widget": "textarea"
-      },
-      "example": {
-        "type": "string",
-        "image1": "https://fakeimg.pl/1280x853/282828/eae0d0/?text=input#.png",
-        "image2": "https://raw.githubusercontent.com/camenduru/birefnet-hf/main/chameleon.jpg",
-        "image3": "https://fakeimg.pl/1280x853/282828/eae0d0/?text=output#.png",
-        "image4": "https://files.catbox.moe/h52btq.png",
-        "widget": "example"
-      }
+  "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+  "type": "object",
+  "properties": {
+    "readme": {
+      "type": "string",
+      "title": "Bilateral Reference for High-Resolution Dichotomous Image Segmentation",
+      "author": "Peng Zheng, Dehong Gao, Deng-Ping Fan, Li Liu, Jorma Laaksonen, Wanli Ouyang, Nicu Sebe",
+      "page": "https://www.birefnet.top/",
+      "paper": "https://arxiv.org/abs/2401.03407",
+      "code": "https://github.com/ZhengPeng7/BiRefNet",
+      "jupyter": "https://github.com/camenduru/BiRefNet-jupyter",
+      "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/birefnet.ipynb",
+      "tags": [
+        "Vision to Image"
+      ],
+      "widget": "readme"
     },
-    "buttons": [
-      {
-        "id": "enter",
-        "label": "🥪 Enter"
-      }
-    ]
-  }
+    "upload": {
+      "type": "string",
+      "widget": "upload",
+      "upload_url": "https://litterbox.catbox.moe/resources/internals/api.php",
+      "property": "input_image_check"
+    },
+    "input_image_check": {
+      "type": "string",
+      "description": "Input Image URL",
+      "widget": "textarea"
+    },
+    "example": {
+      "type": "string",
+      "image1": "https://fakeimg.pl/1280x853/282828/eae0d0/?text=input#.png",
+      "image2": "https://raw.githubusercontent.com/camenduru/birefnet-hf/main/chameleon.jpg",
+      "image3": "https://fakeimg.pl/1280x853/282828/eae0d0/?text=output#.png",
+      "image4": "https://files.catbox.moe/h52btq.png",
+      "widget": "example"
+    }
+  },
+  "buttons": [
+    {
+      "id": "enter",
+      "label": "🥪 Enter"
+    }
+  ]
+}
